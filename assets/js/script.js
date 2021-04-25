@@ -76,10 +76,42 @@ $(".saveBtn").click(function() {
     localStorage.setItem(hour, text);
 })
 
-// access items from local storage and display on page
-$(".time-block").each(function() {
-    var task = document.querySelector(".task-edit");
-    var hour = document.querySelector(".hour").innerHTML;
+var hourArray = [
+    {time: document.querySelector("#eightAm"),
+    text: document.querySelector("#eightTask")
+    },
+    {time: document.querySelector("#nineAm"),
+    text: document.querySelector("#nineTask")
+    },
+    {time: document.querySelector("#tenAm"),
+    text: document.querySelector("#tenTask")
+    },
+    {time: document.querySelector("#elevenAm"),
+    text: document.querySelector("#elevenTask")
+    },
+    {time: document.querySelector("#twelvePm"),
+    text: document.querySelector("#twelveTask")
+    },
+    {time: document.querySelector("#onePm"),
+    text: document.querySelector("#oneTask")
+    },
+    {time: document.querySelector("#twoPm"),
+    text: document.querySelector("#twoTask")
+    },
+    {time: document.querySelector("#threePm"),
+    text: document.querySelector("#threeTask")
+    },
+    {time: document.querySelector("#fourPm"),
+    text: document.querySelector("#fourTask")
+    },
+    {time: document.querySelector("#fivePm"),
+    text: document.querySelector("#fiveTask")
+    }
+];
+
+for (var i = 0; i < hourArray.length; i++) {
+    var task = hourArray[i].text;
+    var hour = hourArray[i].time.textContent;
     var displayTask = localStorage.getItem(hour);
     task.innerHTML = displayTask;
-})
+}
