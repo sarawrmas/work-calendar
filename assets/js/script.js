@@ -1,8 +1,11 @@
 // display date and time in jumbotron
 var displayDate = function() {
-    var currentDay = moment().format('MMMM Do YYYY, h:mm a');
+    var currentDay = moment().format('MMMM Do, YYYY');
+    var currentTime = moment().format('h:mm a')
     var displayDate = document.querySelector("#currentDay");
+    var displayTime = document.querySelector("#currentTime")
     displayDate.textContent = currentDay;
+    displayTime.textContent = currentTime;
 }
 
 // display date on page load

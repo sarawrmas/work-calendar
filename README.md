@@ -6,10 +6,11 @@
 * [Technologies](#technologies)
 * [Usage](#usage)
 * [Preview](#preview)
+* [Questions](#questions)
 * [Credits](#credits)
 
 ## Deployed
-https://sarawrmas.github.io/work-calendar/
+Access the application at https://sarawrmas.github.io/work-calendar/
 
 ## Description
 Keep track of your work day in an hourly task breakdown. Get notified when a time slot is nearing so you never miss a deadline.
@@ -32,7 +33,12 @@ The hourly breakown is color coded so you always know what time slot you are in.
 If you're not sure what time it is exactly, refer to the top of the screen where the current time is displayed under the header.
 
 ## Preview
-![screenshot](assets/images/screenshot.png)
+![screenshot](assets/images/screenshot1.png)
+
+## Questions
+Have questions about this project?
+GitHub: https://github.com/sarawrmas
+Email: sara.m.adamski@gmail.com
 
 ## Credits
 Sara Adamski
